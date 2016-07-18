@@ -1,0 +1,18 @@
+---
+layout: default
+---
+<section id="banner">
+    <header>
+      <h2>This is Overflow</h2>
+    </header>
+
+  </section>
+<article class="container box style3">
+    <header>
+      <h2>{{ page.title }}</h2>
+      <p ><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
+    </header>
+
+  {{ content }}
+
+  </article>
